@@ -32,7 +32,7 @@ public class GoldenMasterTest {
 
 	@SuppressWarnings("resource")
 	private String contentOf(String filename) throws Exception {
-		return new Scanner(new File(filename)).useDelimiter("\\Z").next();
+		return new Scanner(new File(filename)).useDelimiter("\\Z").next().replaceAll("\\n", System.lineSeparator());
 	}
 
 	@Before
