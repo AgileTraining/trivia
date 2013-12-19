@@ -10,10 +10,10 @@ public class GameRunner {
 	private static boolean notAWinner;
 
 	public static void main(String[] args) {
-		run(0);
+		run(new Random().nextLong());
 	}
 
-	public static void run(int seed) {
+	public static void run(long seed) {
 	    Game aGame = new Game();
 		
 		aGame.add("Chet");
